@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="super"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 07:40:08 PM"/>
+        <attribute name="created" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDI7MDc6Mjk6MzkgUE07MjkyMQ=="/>
+        <attribute name="edited" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDk7MDc6NDA6MDggUE07MjszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="Real" array="False" size=""/>
+            <declare name="numofhits" type="Real" array="False" size=""/>
+            <declare name="atbats" type="Real" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <input variable="numofhits"/>
+            <input variable="atbats"/>
+            <call expression="average(numofbats, atbats)"/>
+            <assign variable="average" expression="average(numofbats, atbats)"/>
+            <input variable="average"/>
+            <output expression="&quot;last name&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="average" type="Real" variable="average">
+        <parameters>
+            <parameter name="numofhits" type="Real" array="False"/>
+            <parameter name="atbats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="qty * price"/>
+            <if expression="total &gt; 10000.00">
+                <then>
+                    <assign variable="total" expression="total * 0.90"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="total"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
