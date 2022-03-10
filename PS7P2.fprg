@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="super"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 07:51:32 PM"/>
+        <attribute name="created" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDI7MDc6Mjk6MzkgUE07MjkyMQ=="/>
+        <attribute name="edited" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDk7MDc6NTE6MzIgUE07MzszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="Real" array="False" size=""/>
+            <declare name="numofhits" type="Real" array="False" size=""/>
+            <declare name="atbats" type="Real" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <input variable="numofhits"/>
+            <input variable="atbats"/>
+            <call expression="average(numofbats, atbats)"/>
+            <assign variable="average" expression="average(numofbats, atbats)"/>
+            <input variable="average"/>
+            <output expression="&quot;last name&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="average" type="Real" variable="average">
+        <parameters>
+            <parameter name="numofhits" type="Real" array="False"/>
+            <parameter name="atbats" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="average" type="Real" array="False" size=""/>
+            <declare name="numofhits" type="Real" array="False" size=""/>
+            <declare name="atbats" type="Real" array="False" size=""/>
+            <assign variable="average" expression="numofhits / atbats"/>
+        </body>
+    </function>
+</flowgorithm>
