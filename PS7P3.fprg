@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="super"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-09 07:50:00 PM"/>
+        <attribute name="created" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDI7MDc6Mjk6MzkgUE07MjkyMQ=="/>
+        <attribute name="edited" value="c3VwZXI7REVTS1RPUC0ySzNRT1FNOzIwMjItMDMtMDk7MDc6NTA6MDAgUE07MzszMDIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="destinationcity" type="Real" array="False" size=""/>
+            <declare name="milestravelled" type="Real" array="False" size=""/>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <declare name="milespergallon" type="Real" array="False" size=""/>
+            <declare name="cost" type="Integer" array="False" size=""/>
+            <input variable="milestravelled"/>
+            <input variable="gallons"/>
+            <call expression="milespergallon(milestravelled, gallons)"/>
+            <assign variable="milespergallon" expression="milespergallon(milestravelled, gallons)"/>
+            <input variable="gallons"/>
+            <assign variable="gallons" expression="2.50"/>
+            <call expression="cost(gallons)"/>
+            <output expression="&quot;destination city&quot;" newline="True"/>
+            <output expression="&quot;milestravlled&quot;" newline="True"/>
+            <output expression="&quot;cost&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="cost" type="Real" variable="cost">
+        <parameters>
+            <parameter name="gallons" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <assign variable="gallons" expression="2.50"/>
+            <declare name="cost" type="Real" array="False" size=""/>
+        </body>
+    </function>
+    <function name="milespergallon" type="Real" variable="milespergallon">
+        <parameters>
+            <parameter name="milestravelled" type="Real" array="False"/>
+            <parameter name="gallons" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="milestravelled" type="Real" array="False" size=""/>
+            <declare name="gallons" type="Real" array="False" size=""/>
+            <assign variable="milespergallon" expression="milestravelled / gallons"/>
+        </body>
+    </function>
+</flowgorithm>
